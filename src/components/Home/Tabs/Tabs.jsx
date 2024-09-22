@@ -1,9 +1,11 @@
+import Performance from "../Performance/Performance";
+
 const Tabs = () => {
     return (
         <div>
             <div role="tablist" className="tabs tabs-bordered">
                 <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Overview" />
-                <div role="tabpanel" className="tab-content p-10">Overview</div>
+                <div role="tabpanel" className="tab-content p-10 w-full"><Performance></Performance></div>
 
                 <input
                     type="radio"
