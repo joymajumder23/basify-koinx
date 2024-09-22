@@ -1,3 +1,5 @@
+import { FaExclamationCircle } from "react-icons/fa";
+
 const Performance = () => {
     return (
         <div className="space-y-4">
@@ -15,7 +17,7 @@ const Performance = () => {
 
 
             <section>
-                <h1 className="text-xl font-bold">Fundamentals</h1>
+                <h1 className="flex gap-2 items-center text-xl font-bold">Fundamentals <span className="text-slate-400"><FaExclamationCircle></FaExclamationCircle></span></h1>
             <div className="flex gap-12 items-center">
                 <div>
                     <div className="flex gap-2 justify-between items-center border-b py-4">
