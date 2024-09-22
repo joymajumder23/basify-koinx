@@ -5,6 +5,7 @@ import icon3 from "../../../assets/images/icon3.png";
 import icon4 from "../../../assets/images/icon1.png";
 import Tabs from "../Tabs/Tabs";
 import Sentiment from "../../Pages/Sentiment/Sentiment";
+import About from "../../Pages/About/About";
 const Home = () => {
     return (
         <div className="mx-auto max-w-screen-xl">
@@ -19,6 +20,9 @@ const Home = () => {
                     </section>
                     <section>
                         <Sentiment></Sentiment>
+                    </section>
+                    <section>
+                        <About></About>
                     </section>
                 </div>
                 <div>
