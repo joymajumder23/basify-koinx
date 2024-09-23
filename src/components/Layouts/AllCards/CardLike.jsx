@@ -13,7 +13,7 @@ const CardLike = ({data}) => {
                 <figure>
                     <img
                         src={data.item.data.sparkline}
-                        alt="Shoes" />
+                        alt="" />
                 </figure>
             </div>
         </div>

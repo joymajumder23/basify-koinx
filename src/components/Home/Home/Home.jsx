@@ -20,9 +20,9 @@ const Home = () => {
     console.log(trend);
     return (
         <div className="mx-auto max-w-screen-xl">
-            <div className="flex justify-between">
+            <div className="md:flex justify-between">
                 <div>
-                    <h3 className="flex items-center gap-2 text-2xl font-semibold"><img className="w-9" src={icon1} alt="" />Bitcoin <span className="text-slate-400">BTC</span></h3>
+                    <h3 className="md:flex items-center gap-2 text-2xl font-semibold"><img className="w-9" src={icon1} alt="" />Bitcoin <span className="text-slate-400">BTC</span></h3>
                     <div>
                         <Memo></Memo>
                     </div>

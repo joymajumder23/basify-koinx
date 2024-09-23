@@ -14,7 +14,7 @@ const TrendCard = ({data}) => {
                 <figure>
                     <img
                         src={data.data.sparkline}
-                        alt="Shoes" />
+                        alt="" />
                 </figure>
             </div> 
         </div>

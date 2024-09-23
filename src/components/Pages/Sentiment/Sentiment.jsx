@@ -5,7 +5,7 @@ const Sentiment = () => {
         <div className="space-y-4">
             <h1 className="text-2xl font-bold">Sentiment</h1>
             <p className="text-slate-400 font-bold">Key Events</p>
-            <div className="w-[700px] p-6">
+            <div className="md:w-[700px] p-6">
                 <Slider></Slider>
             </div>
             <p className="text-slate-400 font-bold">Analyst Estimates</p>

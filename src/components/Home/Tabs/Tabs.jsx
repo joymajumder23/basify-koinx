@@ -3,9 +3,9 @@ import Performance from "../Performance/Performance";
 const Tabs = () => {
     return (
         <div>
-            <div role="tablist" className="tabs tabs-bordered">
+            <div role="tablist" className="tabs-bordered w-[450px] md:w-full">
                 <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Overview" />
-                <div role="tabpanel" className="tab-content p-10 w-full"><Performance></Performance></div>
+                <div role="tabpanel" className="tab-content p-10 w-[450px] md:w-full"><Performance></Performance></div>
 
                 <input
                     type="radio"

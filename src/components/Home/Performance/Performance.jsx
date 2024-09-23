@@ -18,7 +18,7 @@ const Performance = () => {
 
             <section>
                 <h1 className="flex gap-2 items-center text-xl font-bold">Fundamentals <span className="text-slate-400"><FaExclamationCircle></FaExclamationCircle></span></h1>
-            <div className="flex gap-12 items-center">
+            <div className="md:flex gap-12 items-center">
                 <div>
                     <div className="flex gap-2 justify-between items-center border-b py-4">
                         <p className="text-sm text-slate-400">Bitcoin</p>
