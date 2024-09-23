@@ -3,6 +3,7 @@ const CardLike = ({data}) => {
         <div>
             <div className="card bg-base-100 w-full shadow-xl p-6 flex-grow border-2">
             <div className="">
+                <img src={data.item.small} alt="" />
                     <h2 className="card-title">
                        {data.item.name}
                         {/* <div className="badge badge-secondary">NEW</div> */}

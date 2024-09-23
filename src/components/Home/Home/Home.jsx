@@ -9,6 +9,7 @@ import About from "../../Pages/About/About";
 import Memo from "../../Layouts/Memo/Memo";
 import { useEffect, useState } from "react";
 import CardSlider from "../../Layouts/Slider/CardSlider";
+import CardSlide from "../../Layouts/Slider/CardSlide";
 const Home = () => {
     const [trend, setTrend] = useState([]);
     useEffect(() => {
@@ -77,8 +78,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <section>
-                <h1 className="text-2xl font-bold">You may also like</h1>
+            <section className="space-y-4">
+                <h1 className="text-2xl font-bold">You May Also Like</h1>
+                <CardSlide></CardSlide>
+                <h1 className="text-2xl font-bold">Trending Coins</h1>
                 <CardSlider></CardSlider>
             </section>
         </div>
