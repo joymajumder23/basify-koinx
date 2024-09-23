@@ -6,12 +6,25 @@ import icon4 from "../../../assets/images/icon1.png";
 import Tabs from "../Tabs/Tabs";
 import Sentiment from "../../Pages/Sentiment/Sentiment";
 import About from "../../Pages/About/About";
+import Memo from "../../Layouts/Memo/Memo";
+import { useEffect, useState } from "react";
+import CardSlider from "../../Layouts/Slider/CardSlider";
 const Home = () => {
+    const [trend, setTrend] = useState([]);
+    useEffect(() => {
+        fetch('./trending.json')
+            .then(res => res.json())
+            .then(data => setTrend(data.coins))
+    }, []);
+    console.log(trend);
     return (
         <div className="mx-auto max-w-screen-xl">
             <div className="flex justify-between">
                 <div>
                     <h3 className="flex items-center gap-2 text-2xl font-semibold"><img className="w-9" src={icon1} alt="" />Bitcoin <span className="text-slate-400">BTC</span></h3>
+                    <div>
+                        <Memo></Memo>
+                    </div>
 
                     <section>
                         <div>
@@ -56,7 +69,7 @@ const Home = () => {
                             </div>
 
                             <div className="space-y-4">
-                                <p className="text-[#14B079] bg-[#EBF9F4] flex items-center px-2"><IoMdArrowDropup></IoMdArrowDropup> <span>8.21%</span></p>
+                                <p className="text-[#14B079] bg-[#EBF9F4] flex items-center px-2"><IoMdArrowDropup></IoMdArrowDropup> <span>8.24%</span></p>
                                 <p className="text-[#14B079] bg-[#EBF9F4] flex items-center px-2"><IoMdArrowDropup></IoMdArrowDropup> <span>5.26%</span></p>
                                 <p className="text-[#14B079] bg-[#EBF9F4] flex items-center px-2"><IoMdArrowDropup></IoMdArrowDropup> <span>4.32%</span></p>
                             </div>
@@ -64,6 +77,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <section>
+                <h1 className="text-2xl font-bold">You may also like</h1>
+                <CardSlider></CardSlider>
+            </section>
         </div>
     );
 };
